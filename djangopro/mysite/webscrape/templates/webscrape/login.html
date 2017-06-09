@@ -1,0 +1,54 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+		$("#flip").click(function(){
+		$("#panel").slideToggle();$("#flip").hide();
+			
+		}); 
+			
+	$("#btn").click(function(){
+
+		var txtlength1=$("#textname").val().length;
+alert($("#textname").val());
+alert($("#textname").val().length);
+if(txtlength1==0)
+{
+$("#textname").css("background-color","red");
+alert("User Name is required");
+}
+			
+		}); 			
+
+});
+
+
+
+
+
+</script>
+<style>
+#panel,#flip{
+	background-color:ee5eef;
+	padding:5px;
+	text-align:center;
+	boder:solid 1px green;
+}
+#panel{
+	background-color:ee5eef;
+	padding:20px;
+	display:none;
+}
+</style>
+</head>
+<body>
+<div id="flip">click here</div>
+<div id="panel"> 
+Name <input id="textname" type="text" value="" baseer="xyz" name= textpswd></input>
+password <input  id="textpswd" type ="password" value="" name="textpswd"></input>
+<input type="button" id="btn" value="submit" />
+<table>
+</table>  </div>
+</body>
+</html>
